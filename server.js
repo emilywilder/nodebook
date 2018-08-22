@@ -1,4 +1,4 @@
-var http = require("http");
+var http = require("http")
 var url = require("url")
 
 function start(route, handle) {
@@ -8,10 +8,10 @@ function start(route, handle) {
         
         
         
-        response.writeHead(200, {"Content-Type": "text/plain"});
+        response.writeHead(200, {"Content-Type": "text/plain"})
         var content = route(handle, pathname)
-        response.write(content);
-        response.end();
+        response.write(content)
+        response.end()
     }
 
     http.createServer(onRequest).listen(8888)
