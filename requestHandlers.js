@@ -1,11 +1,11 @@
 function start() {
-    console.log("Request handler 'start' was called.")
-    reutrn "Hello Start!"
+    console.log("Request handler 'start' was called.");
+    return "Hello Start!"
 }
 
 function upload() {
-    console.log("Request handler 'upload' was called.")
-    reutrn "Hello Upload!"
+    console.log("Request handler 'upload' was called.");
+    return "Hello Upload!"
 }
 
 exports.start = start
